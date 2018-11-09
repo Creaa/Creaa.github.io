@@ -337,6 +337,7 @@ table {
     transform: translateX(0px); } }
 
 .site-header {
+  width: 100%;
   height: 601px;
   background-color: black;
   color: white;
@@ -365,9 +366,8 @@ table {
       height: 150px; }
   .site-header .pikachu-running {
     position: absolute;
-    bottom: 450px;
+    top: 300px;
     left: 520px;
-    max-width: 300px;
     max-height: 300px; }
 
 #app {
