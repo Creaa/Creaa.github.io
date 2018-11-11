@@ -88,8 +88,7 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -103,35 +102,29 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol,
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote,
 q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 .flash-light-diode {
   /* ff3.6+ */
@@ -149,24 +142,21 @@ table {
   border: 1.5px solid black;
   position: absolute;
   right: 1.5px;
-  top: 2px;
-}
+  top: 2px; }
 
 .flash-light-container {
   position: relative;
   width: 68px;
   height: 68px;
   border-radius: 50px;
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .small-diodes {
   width: 20px;
   height: 20px;
   border-radius: 50px;
   background-color: green;
-  border: 2px solid black;
-}
+  border: 2px solid black; }
 
 .main-wrapper {
   width: 600px;
@@ -174,295 +164,211 @@ table {
   background-color: white;
   border: 10px solid white;
   border-radius: 30px;
-  overflow-y: scroll;
-}
+  overflow-y: scroll; }
 
 .pokemon-list {
   background-image: url("https://i.ytimg.com/vi/rLslWnrYnfE/maxresdefault.jpg");
-  background-size: cover;
-  background-repeat: repeat;
-}
-
-.pokemon-list li {
-  color: #ffcb07;
-  text-shadow: -4px 0 blue, 0 1px black, 3px 0 black, 0 -1px black;
-  font-family: Pokemon Solid, sans-serif;
-  cursor: pointer;
-  list-style: none;
-  font-size: 24px;
-  padding-left: 10px;
-  text-transform: uppercase;
-  letter-spacing: 7px;
-}
-
-.pokemon-list li img {
-  max-height: 50px;
-  margin-left: 10px;
-}
-
-.pokemon-list li:hover {
-  background-color: navy;
-  color: white;
-}
+  background-size: contain;
+  background-repeat: repeat; }
+  .pokemon-list li {
+    color: #ffcb07;
+    text-shadow: -4px 0 blue, 0 1px black, 3px 0 black, 0 -1px black;
+    font-family: Pokemon Solid, sans-serif;
+    cursor: pointer;
+    list-style: none;
+    font-size: 24px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 7px; }
+    .pokemon-list li img {
+      max-height: 50px;
+      margin-left: 10px; }
+  .pokemon-list li:hover {
+    background-color: navy;
+    color: white; }
 
 .pokemon-data-view {
   height: 400px;
   position: relative;
-  overflow: hidden;
-}
-
-.pokemon-data-view .poke-avatar {
-  animation: PokemonAppearsAnimation 2.5s;
-  position: absolute;
-  cursor: pointer;
-  right: 0px;
-  top: -50px;
-  min-width: 300px;
-  min-height: 300px;
-  max-width: 300px;
-  max-height: 300px;
-}
-
-.pokemon-data-view .poke-avatarChange {
-  animation: PokemonAppearsAnimation 2.5s;
-  position: absolute;
-  cursor: pointer;
-  right: 0px;
-  top: -20px;
-  min-width: 300px;
-  min-height: 300px;
-  max-width: 300px;
-  max-height: 300px;
-}
-
-.pokemon-data-view .pokeballsmoke {
-  display: block;
-  animation: smokeAnimation 3s forwards;
-  position: absolute;
-  cursor: pointer;
-  right: 0px;
-  top: -80px;
-  min-width: 300px;
-  min-height: 300px;
-  max-width: 300px;
-  max-height: 300px;
-}
-
-.pokemon-data-view .poke-info,
-.pokemon-data-view .poke-infoChange {
-  max-width: 300px;
-  font-size: 25px;
-  position: absolute;
-  left: 40px;
-  top: 40px;
-}
-
-.pokemon-data-view .poke-info p,
-.pokemon-data-view .poke-infoChange p {
-  text-transform: uppercase;
-  font-family: Mali, sans-serif;
-  letter-spacing: 2px;
-  padding-bottom: 10px;
-}
-
-.pokemon-data-view .poke-info .poke-nameChange,
-.pokemon-data-view .poke-infoChange .poke-nameChange {
-  animation: showPokeInfo 4s;
-}
-
-.pokemon-data-view .poke-info .poke-idChange,
-.pokemon-data-view .poke-infoChange .poke-idChange {
-  animation: showPokeInfo 5s;
-}
-
-.pokemon-data-view .poke-info .poke-categoryChange,
-.pokemon-data-view .poke-infoChange .poke-categoryChange {
-  animation: showPokeInfo 5.5s;
-}
-
-.pokemon-data-view .poke-info .poke-weightChange,
-.pokemon-data-view .poke-infoChange .poke-weightChange {
-  animation: showPokeInfo 6s;
-}
-
-.pokemon-data-view .poke-info .poke-heightChange,
-.pokemon-data-view .poke-infoChange .poke-heightChange {
-  animation: showPokeInfo 6.2s;
-}
-
-.pokemon-data-view .poke-description {
-  min-width: 500px;
-  font-size: 20px;
-  position: absolute;
-  bottom: 50px;
-  left: 0;
-  padding: 10px;
-  border: 3px solid black;
-  border-radius: 30px;
-}
-
-.pokemon-data-view .pokemon-cry {
-  display: none !important;
-}
-
-.pokemon-data-view .backbutton {
-  cursor: pointer;
-  font-family: tahoma;
-  text-transform: uppercase;
-  position: absolute;
-  top: 3px;
-  left: 4px;
-}
-
-.pokemon-data-view .water {
-  width: 100%;
-  opacity: 0.6;
-  transform: translateY(500px);
-  transition: 5s;
-}
-
-.pokemon-data-view .pikahearts {
-  margin-left: 400px;
-  margin-top: 80px;
-}
-
-.pokemon-data-view .pikahearts img {
-  width: 60px;
-  height: 60px;
-  padding: 5px;
-  right: 0px;
-  top: -80px;
-}
+  overflow: hidden; }
+  .pokemon-data-view .poke-avatar {
+    animation: PokemonAppearsAnimation 2.5s;
+    position: absolute;
+    cursor: pointer;
+    right: 0px;
+    top: -50px;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px; }
+  .pokemon-data-view .poke-avatarChange {
+    animation: PokemonAppearsAnimation 2.5s;
+    position: absolute;
+    cursor: pointer;
+    right: 0px;
+    top: -20px;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px; }
+  .pokemon-data-view .pokeballsmoke {
+    display: block;
+    animation: smokeAnimation 3s forwards;
+    position: absolute;
+    cursor: pointer;
+    right: 0px;
+    top: -80px;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px; }
+  .pokemon-data-view .poke-info,
+  .pokemon-data-view .poke-infoChange {
+    max-width: 300px;
+    font-size: 25px;
+    position: absolute;
+    left: 40px;
+    top: 40px; }
+    .pokemon-data-view .poke-info p,
+    .pokemon-data-view .poke-infoChange p {
+      text-transform: uppercase;
+      font-family: Mali, sans-serif;
+      letter-spacing: 2px;
+      padding-bottom: 10px; }
+    .pokemon-data-view .poke-info .poke-nameChange,
+    .pokemon-data-view .poke-infoChange .poke-nameChange {
+      animation: showPokeInfo 4s; }
+    .pokemon-data-view .poke-info .poke-idChange,
+    .pokemon-data-view .poke-infoChange .poke-idChange {
+      animation: showPokeInfo 5s; }
+    .pokemon-data-view .poke-info .poke-categoryChange,
+    .pokemon-data-view .poke-infoChange .poke-categoryChange {
+      animation: showPokeInfo 5.5s; }
+    .pokemon-data-view .poke-info .poke-weightChange,
+    .pokemon-data-view .poke-infoChange .poke-weightChange {
+      animation: showPokeInfo 6s; }
+    .pokemon-data-view .poke-info .poke-heightChange,
+    .pokemon-data-view .poke-infoChange .poke-heightChange {
+      animation: showPokeInfo 6.2s; }
+  .pokemon-data-view .poke-description {
+    min-width: 500px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 30px; }
+  .pokemon-data-view .pokemon-cry {
+    display: none !important; }
+  .pokemon-data-view .backbutton {
+    cursor: pointer;
+    font-family: tahoma;
+    text-transform: uppercase;
+    position: absolute;
+    top: 3px;
+    left: 4px; }
+  .pokemon-data-view .water {
+    width: 100%;
+    opacity: 0.6;
+    transform: translateY(500px);
+    transition: 5s; }
+  .pokemon-data-view .pikahearts {
+    margin-left: 400px;
+    margin-top: 80px; }
+    .pokemon-data-view .pikahearts img {
+      width: 60px;
+      height: 60px;
+      padding: 5px;
+      right: 0px;
+      top: -80px; }
 
 @keyframes PikaHeartAnimation {
   0% {
-    opacity: 0;
-  }
-
+    opacity: 0; }
   80% {
     opacity: 1;
-    transform: translateY(-85px);
-  }
-
+    transform: translateY(-85px); }
   100% {
-    opacity: 0;
-  }
-}
+    opacity: 0; } }
 
 @keyframes WaterAnimation {
   0% {
-    transform: translateY(500px);
-  }
-
+    transform: translateY(500px); }
   100% {
-    transform: translateY(0px);
-  }
-}
+    transform: translateY(0px); } }
 
 @keyframes ItemsDrowning {
   100% {
     top: -250px;
     transform: rotate(0deg);
-    bottom: 400px;
-  }
-}
+    bottom: 400px; } }
 
 @keyframes PokemonAppearsAnimation {
   0% {
     display: none;
-    transform: scale(0);
-  }
-
+    transform: scale(0); }
   90% {
     display: none;
-    transform: scale(0);
-  }
-
+    transform: scale(0); }
   100% {
     display: block;
-    transform: scale(1);
-  }
-}
+    transform: scale(1); } }
 
 @keyframes smokeAnimation {
   0% {
-    transform: scale(0);
-  }
-
+    transform: scale(0); }
   65% {
-    transform: scale(0);
-  }
-
+    transform: scale(0); }
   90% {
-    transform: scale(1);
-  }
-
+    transform: scale(1); }
   100% {
-    transform: scale(0);
-  }
-}
+    transform: scale(0); } }
 
 @keyframes showPokeInfo {
   0% {
     display: none;
-    transform: translateX(-500px);
-  }
-
+    transform: translateX(-500px); }
   80% {
     display: block;
-    transform: translateX(-500px);
-  }
-
+    transform: translateX(-500px); }
   100% {
     display: block;
-    transform: translateX(0px);
-  }
-}
+    transform: translateX(0px); } }
 
 .site-header {
   width: 100%;
   height: 601px;
   background-color: black;
   color: white;
-  background-image: url("./img/site/road.gif");
+  background-image: url("/img/site/road.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-bottom: 200px;
-}
-
-.site-header .site-header {
-  position: relative;
-}
-
-.site-header .site-title {
-  position: relative;
-}
-
-.site-header .site-title h1 {
-  color: #ffcb07;
-  text-shadow: -4px 0 blue, 0 1px black, 3px 0 black, 0 -1px black;
-  font-family: Pokemon Solid, sans-serif;
-  font-size: 100px;
-  position: absolute;
-  left: 450px;
-  top: 50px;
-}
-
-.site-header .site-title :nth-child(2) {
-  position: absolute;
-  left: 630px;
-  top: 130px;
-  width: 150px;
-  height: 150px;
-}
-
-.site-header .pikachu-running {
-  position: absolute;
-  top: 300px;
-  left: 520px;
-  max-height: 300px;
-}
+  margin-bottom: 200px; }
+  .site-header .site-header {
+    position: relative; }
+  .site-header .site-title {
+    position: relative; }
+    .site-header .site-title h1 {
+      color: #ffcb07;
+      text-shadow: -4px 0 blue, 0 1px black, 3px 0 black, 0 -1px black;
+      font-family: Pokemon Solid, sans-serif;
+      font-size: 100px;
+      position: absolute;
+      left: 450px;
+      top: 50px; }
+    .site-header .site-title :nth-child(2) {
+      position: absolute;
+      left: 630px;
+      top: 130px;
+      width: 150px;
+      height: 150px; }
+  .site-header .pikachu-running {
+    position: absolute;
+    top: 300px;
+    left: 520px;
+    max-height: 300px; }
 
 #app {
   margin-top: 30px;
@@ -472,44 +378,32 @@ table {
   border: 10px solid black;
   border-radius: 30px;
   box-shadow: 20px -20px 10px #888888;
-  margin-bottom: 100px;
-}
+  margin-bottom: 100px; }
+  #app .main-wrapper {
+    box-shadow: 20px -15px 10px #c49696;
+    margin: 0 auto;
+    margin-bottom: 60px; }
+  #app .main-diodes {
+    padding: 15px 70px;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px; }
+  #app .diodes {
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto 0;
+    padding: 0 30px; }
+  #app .small-diodes {
+    margin: 0 4px; }
+  #app .device-footer {
+    position: relative;
+    padding-bottom: 300px; }
+    #app .device-footer img {
+      cursor: pointer;
+      position: absolute;
+      bottom: 30px;
+      right: 70px;
+      margin-left: 80px;
+      width: 400px;
+      height: 200px; }
 
-#app .main-wrapper {
-  box-shadow: 20px -15px 10px #c49696;
-  margin: 0 auto;
-  margin-bottom: 60px;
-}
-
-#app .main-diodes {
-  padding: 15px 70px;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 20px;
-}
-
-#app .diodes {
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto 0;
-  padding: 0 30px;
-}
-
-#app .small-diodes {
-  margin: 0 4px;
-}
-
-#app .device-footer {
-  position: relative;
-  padding-bottom: 300px;
-}
-
-#app .device-footer img {
-  cursor: pointer;
-  position: absolute;
-  bottom: 30px;
-  right: 70px;
-  margin-left: 80px;
-  width: 400px;
-  height: 200px;
-}
